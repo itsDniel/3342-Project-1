@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sandwich Menu</title>
+    <link rel="stylesheet" href="Sandwich.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid bg-warning">
+    <h1>Sandwich Builder</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+        <img align="right" src="https://assets.bonappetit.com/photos/62b1f659a38f8b1339b88af8/1:1/w_1920,c_limit/20220615-0622-sandwiches-1746-final%20(1).jpg" 
+             style="width:50%; height:50%;" />
+        <form method="post" action="processSandwich.aspx">
+            Please enter your name: <input type="text" name="txtFullName" id="txtFullName" />
+            <br />
+            <br />
+            Please enter your phone number: <input type="text" name="txtPhone" id="txtPhone" />
+            <br />
+            <br />
+            Please select your sandwich size:  <select id="ddlSize" name="ddlSize">
+                <option value="Small">Small ($5)</option>
+                <option value="Medium">Medium ($6)</option>
+                <option value="Large">Large ($7)</option>
+                <option value="xLarge">Extra Large ($8)</option>
+            </select>
+            <br />
+            <br />
+            Would you like your sandwich to be toasted or not? <br />
+            <input type="radio" id="toasted" name="toastOption" value="Toasted">
+            <label for="toasted">Toasted</label><br />
+            <input type="radio" id="noToast" name="toastOption" value="No Toast">
+            <label for="notoast">Not Toasted</label>
+            <br />
+            <br />
+
+            Please choose your sauce: <select id="ddlSauce" name="ddlSauce">
+                <option value="Mayo">Mayo</option>
+                <option value="Mustard">Mustard</option>
+                <option value="Avocado">Avocado Ranch</option>
+                <option value="Ketchup">Ketchup</option>
+                <option value="Ranch">Buttermilk Ranch</option>
+            </select>
+            <br />
+            <br />
+
+            Please select your filling ($.25 per filling): <br />
+            <input type="checkbox" id="lettuce" name="filling" value="Lettuce">
+            <label for="lettuce">Lettuce</label><br />
+            <input type="checkbox" id="tomato" name="filling" value="Tomato">
+            <label for="tomato">Tomato</label><br />
+            <input type="checkbox" id="onion" name="filling" value="Onion">
+            <label for="onion">Onion</label><br />
+            <input type="checkbox" id="bacon" name="filling" value="Bacon">
+            <label for="bacon">Bacon</label><br />
+            <input type="checkbox" id="chicken" name="filling" value="Chicken">
+            <label for="chicken">Chicken</label><br />
+
+            Extra options ($1 per extra option): <br />
+            <input type="checkbox" id="xtraLettuce" name="xtra" value="Extra Lettuce">
+            <label for="xtraLettuce">Extra Lettuce</label><br />
+            <input type="checkbox" id="xtraTomato" name="xtra" value="Extra Tomato">
+            <label for="xtraTomato">Extra Tomato</label><br />
+            <input type="checkbox" id="xtraMeat" name="xtra" value="Extra Meat">
+            <label for="xtraMeat">Extra Meat</label><br />
+            <input type="checkbox" id="xtraOnion" name="xtra" value="Extra Onion">
+            <label for="xtraOnion">Extra Onion</label><br />
+            <input type="checkbox" id="xtraChicken" name="xtra" value="Extra Chicken">
+            <label for="xtraChicken">Extra Chicken</label><br />
+
+            Meal options ($2 per extra option): <br />
+            <input type="checkbox" id="fries" name="mOption" value="Fries">
+            <label for="fries">Fries</label><br />
+            <input type="checkbox" id="fruits" name="mOption" value="Fruits">
+            <label for="fruits">Fruits</label><br />
+            <input type="checkbox" id="cookies" name="mOption" value="Cookies">
+            <label for="cookies">Cookies</label><br />
+            <input type="checkbox" id="drink" name="mOption" value="Drink">
+            <label for="drink">Drink</label><br />
+            <input type="checkbox" id="milkshake" name="mOption" value="Milkshake">
+            <label for="milkshake">Milkshake</label><br />
+            <br />
+
+            Tip: <input type="text" name="numTip" id="numTip" />
+
+            <br />
+            <br />
+
+
+
+
+
+            <input type="submit" id="btnSubmit" name="btnSubmit" value="Submit Order" />
+            <br />
+            <br />
+            <p>Created by Daniel Doan</p>
+
+        </form>
+    </div>
+
+    
+</body>
+</html>
